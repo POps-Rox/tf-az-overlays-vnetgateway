@@ -25,7 +25,7 @@ provider "azurerm" {
 }
 
 module "mod_ampls" {
-  source  = "azurenoops/overlays-vnet-gateway/azurerm"
+  source  = "POps-Rox/tf-az-overlays-vnet-gateway/azurerm"
   version = "x.x.x"
   
   location = "usgovvirginia"
@@ -39,7 +39,7 @@ module "mod_ampls" {
 
 This module can be SCCA compliant and can be used in a SCCA compliant Network. Enable private endpoints and SCCA compliant network rules to make it SCCA compliant.
 
-For more information, please read the [SCCA documentation](https://github.com/azurenoops/terraform-azurerm-overlays-compute-image-gallery/blob/main).
+For more information, please read the [SCCA documentation](https://github.com/POps-Rox/tf-az-overlays-compute-image-gallery/blob/main).
 
 ## Contributing
 
@@ -76,7 +76,7 @@ This Terraform module is open-sourced software licensed under the [MIT License](
 # Licensed under the MIT License.
 
 module "mod_vng" {
-  source  = "azurenoops/overlays-vnet-gateway/azurerm"
+  source  = "POps-Rox/tf-az-overlays-vnet-gateway/azurerm"
   version = "x.x.x"
 
   depends_on = [azurerm_virtual_network.example-vnet, azurerm_subnet.example-snet, azurerm_log_analytics_workspace.example-log]
