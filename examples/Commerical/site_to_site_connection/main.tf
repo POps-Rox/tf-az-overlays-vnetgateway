@@ -37,7 +37,7 @@ module "mod_vng" {
       address_space   = ["10.1.1.0/24"]
     }
   }
-  
+
   # Virtual Network Configuration
   existing_virtual_network_resource_group_name = azurerm_resource_group.vng-network-rg.name
   existing_virtual_network_name                = azurerm_virtual_network.vng-vnet.name

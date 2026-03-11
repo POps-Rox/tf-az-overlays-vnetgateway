@@ -163,7 +163,7 @@ variable "existing_virtual_network_name" {
 variable "existing_virtual_network_resource_group_name" {
   type        = string
   description = "The name of the Existing Virtual Network's Resource Group. If not specified, the module created resourxe group will be used."
-  default = null
+  default     = null
 }
 
 variable "enable_route_table_bgp_route_propagation" {

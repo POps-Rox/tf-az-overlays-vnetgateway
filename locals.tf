@@ -57,7 +57,7 @@ locals {
     for k, v in var.express_route_circuits : k => merge(
       v.peering,
       {
-        resource_group_name        = v.resource_group_name
+        resource_group_name = v.resource_group_name
       }
     )
     if v.peering != null

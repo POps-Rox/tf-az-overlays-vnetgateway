@@ -32,17 +32,17 @@ variable "custom_resource_group_name" {
 variable "custom_virtual_network_gateway_name" {
   description = "The name of the custom virtual network gateway to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_local_network_gateway_name" {
   description = "The name of the custom local network gateway to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_express_route_circuit_name" {
   description = "The name of the custom express route circuit to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 } 

@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
- resource "azurerm_resource_group" "vng-network-rg" {
+resource "azurerm_resource_group" "vng-network-rg" {
   name     = "vng-network-rg"
   location = var.location
   tags = {

@@ -21,7 +21,7 @@ resource "azurerm_route_table" "vgw" {
   name                          = coalesce(var.route_table_name, "${local.virtual_network_gateway_name}-rt")
   resource_group_name           = try(local.resource_group_name, var.existing_virtual_network_resource_group_name)
   disable_bgp_route_propagation = !var.enable_route_table_bgp_route_propagation
-  tags = local.default_tags
+  tags                          = local.default_tags
 }
 
 resource "azurerm_subnet_route_table_association" "vgw" {
@@ -44,5 +44,5 @@ resource "azurerm_public_ip" "vgw" {
   name                = coalesce(each.value.public_ip.name, "${local.virtual_network_gateway_name}-${each.key}-pip")
   resource_group_name = try(local.resource_group_name, var.existing_virtual_network_resource_group_name)
   sku                 = each.value.public_ip.sku
-  tags = local.default_tags
+  tags                = local.default_tags
 }

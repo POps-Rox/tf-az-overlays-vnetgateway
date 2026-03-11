@@ -6,7 +6,7 @@ module "mod_vng" {
   #version = "x.x.x"
   source = "../../.."
 
-  depends_on = [ azurerm_resource_group.vng-network-rg ]
+  depends_on = [azurerm_resource_group.vng-network-rg]
 
   # Resource Group, location, details
   existing_resource_group_name = azurerm_resource_group.vng-network-rg.name
