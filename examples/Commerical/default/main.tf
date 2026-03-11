@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_vng" {
-  #source  = "azurenoops/overlays-vnet-gateway/azurerm"
+  #source  = "github.com/POps-Rox/tf-az-overlays-vnetgateway"
   #version = "x.x.x"
   source = "../../.."
 

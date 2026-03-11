@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_example" {
-  #source  = "azurenoops/overlays-example/azurerm"
+  #source  = "github.com/POps-Rox/tf-overlays-template"
   #version = "x.x.x"
   source = "../../.."
 
